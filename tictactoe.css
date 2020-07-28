@@ -1,0 +1,73 @@
+body {
+    background: url("assets/cool-background.png");
+}
+.cell-container {
+    background-color: lightgray;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 3px;
+    grid-template-rows: 100px 100px 100px;
+    grid-row-gap: 3px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.cell {
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    animation-name: background-transition2;
+    animation-duration: 200ms;
+}
+.cell-animated-p1 {
+    background-color: black;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    animation-name: background-transition1;
+    animation-duration: 100ms;
+}
+.cell-animated-p2 {
+    background-color: red;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    animation-name: background-transition3;
+    animation-duration: 100ms;
+}
+@keyframes background-transition1 {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+@keyframes background-transition2 {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+@keyframes background-transition3 {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
